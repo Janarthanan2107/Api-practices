@@ -99,7 +99,7 @@ a {
 }
 
 .card-details .category {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     font-weight: 700;
     color: rgb(40, 198, 145);
     text-transform: capitalize;
@@ -107,7 +107,7 @@ a {
 
 .card-details .description {
     font-weight: 500;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .price-details {
