@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api Practice</title>
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css" />
+    <!-- fontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css" />
+</head>
+
+<body>
+    <!--Contents needs to places here!-->
+    <header class="header">
+        <h2>Displaying Products From Api</h2>
+    </header>
+    <div class="container">
+        <div class="card" id="card">
+            <div class="img-container">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" id="product">
+            </div>
+            <div class="card-details">
+                <p class="title" id="title">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</p>
+                <span class="category" id="category">men's clothing</span>
+                <p class="description" id="description">Your perfect pack for everyday use and walks in the forest.
+                    Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
+            </div>
+            <div class="price-details">
+                <p class="rate">Price:<span class="price" id="price">$109.95</span></p>
+                <p class="qty">Stock:<span class="stock" id="stock">120</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

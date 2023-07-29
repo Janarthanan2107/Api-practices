@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+    /* colors are changeable always more combinations are in "https://coolors.co/" */
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --white: hsl(0, 0%, 100%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --clr-Transparent-Soft-violet: hsla(0, 0%, 0%, 0.5);
+
+    /* animation and some effects */
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    /* font-fam*/
+    --body-font-family: "Raleway", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+body {
+    font-family: var(--body-font-family);
+    text-decoration: var(--text-dec);
+    background-color: var(--Light-Grayish-Blue);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 60px;
+    text-align: center;
+    padding-top: 1rem;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px var(--clr-Transparent-Soft-violet);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    width: 18rem;
+    min-height: 150px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0px 0px 10px 0px var(--clr-Transparent-Soft-violet);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in;
+}
+
+.card .img-container {
+    width: 100%;
+}
+
+.card .img-container img {
+    height: 185px !important;
+}
+
+.card-details .title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+.card-details .category {
+    font-size: 0.4rem;
+    font-weight: 700;
+    color: rgb(40, 198, 145);
+    text-transform: capitalize;
+}
+
+.card-details .description {
+    font-weight: 500;
+    font-size: 0.5rem;
+}
+
+.price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.price-details .price {
+    font-weight: 700;
+    color: rgb(40, 198, 145);
+}
+
+.price-details .stock {
+    color: brown;
+}
